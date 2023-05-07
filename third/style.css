@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body::before{
+    content:"";
+    background-color: #FFF5ED;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5rem;
+    transform: translate(-36%,-10%);
+    z-index: -1;
+    
+}
+
+/* NAVBAR */
+
+nav{
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+    text-decoration-color: #C16523;
+}
+
+.logo{
+    font-size: x-large;
+    color: #C16523;
+    font-weight: bolder;
+}
+
+.nav-button button{
+    width:2.5rem;
+    align-items: center;
+    background-color: #C16523;
+    border-radius: 0.5rem;
+    border:none;
+    transition: 0.4s;
+}
+.nav-button button:hover{
+    background-color: #444444;
+}
+
+.nav-button img{
+    -webkit-filter: invert(100%);
+}
+
+/* HERO SECTION */
+
+.hero-section{
+    display: flex;
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+    gap: 5rem;
+    
+}
+
+.hero-info{
+    width: 40%;
+    margin-top: 7rem;
+
+}
+
+.text-before-h1-hero{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hero-info h1{
+    font-size: 3.2rem;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    word-spacing: 0.25rem;
+}
+
+.hero-info h1 span{
+    font-size: 3.2rem;
+    color: #C16523;
+}
+
+.paragraph-hero{
+    margin-bottom:3.5rem;
+    word-spacing: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+.buttons button{
+    width: 10rem;
+    height: 2.4rem;
+    border:none;
+    background: none;
+    background-color: #C16523;
+    color:white;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.buttons button:hover{
+    background-color: #444444;
+}
+
+.hero-img{
+    width: 60%;
+    margin-bottom: 9rem;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+.about-us-section{
+    display: flex;
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+    gap: 5rem;
+}
+
+/* ABOUT US SECTION */
+
+.about-us-info{
+    margin-top: 3rem;
+    width: 50%;
+}
+.about-us-info h2{
+    font-size: 2.6rem;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+}
+
+.about-us-info p{
+    margin-bottom:3.5rem;
+    word-spacing: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.about-us-img{
+    width: 50%;
+    margin-top: 2.5rem;
+    overflow: none;
+}
+
+.about-us-img img{
+    width: 100%;
+    height:85%;
+}
+
+.about-us-img::before{
+    content:"";
+    background-color: #FFF5ED;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 5rem;
+    height: 80%;
+    transform: translate(52%,125%);
+    z-index: -1;
+    overflow: none;
+    
+}

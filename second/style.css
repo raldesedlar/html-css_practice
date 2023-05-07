@@ -1,0 +1,734 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #081845;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+.burger{
+    display: none;
+}
+
+/* --- NAVBAR --- */
+
+.logo {
+    display: flex;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #081845;
+    border: none;
+}
+
+nav {
+    display: flex;
+    height: 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-top: 0.2rem;
+}
+
+.nav-wrapper{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 99;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+}
+
+.nav-menu li a:hover{
+    color: #00E4D9;
+    transition: 0.3s;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.button-nav {
+    background-color: #081845;
+    color: #00E4D9;
+    border:2px solid #00E4D9;
+    outline: none;
+    height: 2.5rem;
+    width: 7rem;
+    border-radius:0.7rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-nav:hover{
+    background-color: #00E4D9;
+    color: #081845;
+    transition: 0.3s;
+}
+/* --- HERO SECTION --- */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-top: 6rem;
+    min-height: calc(100vh-4.5rem);
+}
+
+.hero-info{
+    margin-top: 6rem;
+    width: 40%;
+}
+
+.hero-info h1{
+    font-size:2.8rem;
+    
+}
+
+.hero-info p{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    color: grey;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 2rem;
+}
+
+.button{
+    background-color: #081845;
+    color: #00E4D9;
+    border:2px solid #00E4D9;
+    outline: none;
+    height: 2.5rem;
+    width: 9rem;
+    border-radius:0.7rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.button:hover{
+    background-color: #00E4D9;
+    color: #081845;
+    transition: 0.3s;
+}
+
+.hero-img{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    width: 60%;
+}
+
+.hero-img img{
+    width: 100%;
+}
+/* --- FOOTER --- */
+
+.footer{
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img{
+    width: 10rem;
+    height: 5rem;
+    object-fit: contain;
+}
+
+/* --- INTRODUCTION SECTION --- */
+
+.introduction-section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-top: 6rem;
+    min-height: calc(100vh-4.5rem);
+    gap:2rem;
+}
+
+.introduction-img{
+    width: 50%;
+}
+
+.introduction-img img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.introduction-info{
+    margin-top: 7vh;
+    width: 50%;
+    margin-bottom:8rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.introduction-info h2{
+    font-size: 2rem;
+}
+
+.introduction-info p{
+    color: grey;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+/* 4k */
+@media only screen and (min-width: 2200px){
+
+/* --- NAVBAR --- */
+
+.logo {
+    font-size: 3rem;
+}
+nav{
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 2rem;
+}
+.nav-menu {
+    gap: 6rem;
+    font-size:2rem;
+}
+.nav-buttons {
+    gap: 3rem;
+}
+.button-nav {
+    height: 5rem;
+    width: 14rem;
+    font-size:2rem;
+}
+/* --- HERO SECTION --- */
+.hero-section{
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 12rem;
+    
+}
+.hero-info{
+    margin-top: 12rem;
+}
+.hero-info h1{
+    font-size:5.6rem;
+}
+.hero-info p{
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    font-size:2rem;
+}
+.hero-buttons{
+    gap: 4rem;
+}
+.button{
+    height: 5rem;
+    width: 18rem;
+    font-size:2rem;
+}
+.hero-img{
+    margin-right: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 14rem;
+    width: 60%;
+}
+.hero-img img{
+    width: 100%;
+}
+/* --- FOOTER --- */
+
+.footer{
+    margin-left: 9rem;
+    margin-right: 9rem;
+}
+
+.footer img{
+    width: 20rem;
+    height: 10rem;
+}
+
+/* --- INTRODUCTION SECTION --- */
+
+.introduction-section{
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 12rem;
+    gap:4rem;
+}
+.introduction-img img{
+    width: 100%;
+}
+.introduction-info{
+    margin-top: 14vh;
+    margin-bottom:16rem;
+}
+.introduction-info h2{
+    font-size: 4rem;
+}
+.introduction-info p{
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    width: 100%;
+    font-size:2rem;
+}
+
+}
+/* ISPRAVKA ZA 1056PX */
+@media only screen and (max-width:1065px){
+    .nav-menu {
+        gap: 2rem;
+    }
+}
+/* LAPTOP */
+@media only screen and (max-width: 1024px) {
+
+    /* NAV -LAPTOP */
+    nav {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        gap:4rem;
+    }
+    .nav-menu {
+        gap: 2rem;
+    }
+    /* HERO - LAPTOP*/
+    .hero-section{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 4rem;
+    }
+    .hero-info{
+        margin-top: 5rem;
+    }
+    .hero-info h1{
+        font-size:2.4rem;
+    } 
+    .hero-info p{
+        margin-bottom: 3rem;
+    }
+    .hero-buttons{
+        gap: 1rem;
+    }
+    .hero-img{
+        margin-top: 2rem;
+        margin-bottom: 9rem;
+    }
+    .hero-img img{
+        width: 100%;
+    }
+    /* FOOTER - LAPTOP */
+    .footer{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        
+    }
+    .footer img{
+        width: 9rem;
+        height: 5rem;
+    }
+    /* INTRODUCTION - LAPTOP */
+    .introduction-section{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 4rem;
+    }
+    .introduction-img{
+        width: 50%;
+    }
+    .introduction-img img{
+        width: 100%;
+    }
+    .introduction-info{
+        margin-top: 3rem;
+    }
+    .introduction-info p{
+        color: grey;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+/* ISPRAVKA ZA 995PX */
+@media only screen and (max-width:995px){
+    /* --- NAVBAR - 995PX --- */
+ nav {
+     margin-left: 2rem;
+     margin-right: 2rem;
+     margin-top: 0.2rem;
+     gap:1rem;
+ }
+ .nav-menu {
+     gap: 2rem;
+ }
+ .nav-menu li a {
+     font-size: medium;
+ }
+ .button-nav {
+     height: 2rem;
+     width: 5rem;
+ }
+ /* --- HERO SECTION - 995PX --- */
+ 
+ .hero-section{
+     margin-left: 3rem;
+     margin-right: 3rem;
+     margin-top: 6rem;
+ }
+ .hero-info{
+     margin-top: 6rem;
+     width: 40%;
+ }
+ .hero-info h1{
+     font-size:2rem;
+ }
+ .hero-info p{
+     margin-top: 2rem;
+     margin-bottom: 5rem;
+ }
+ .hero-buttons{
+     gap: 1rem;
+ }
+ .button{
+     height: 2rem;
+     width: 7rem;
+ }
+ .hero-img{
+     margin-right: 2rem;
+     margin-top: 2rem;
+     margin-bottom: 7rem;
+     width: 60%;
+ }
+ .hero-img img{
+     width: 100%;
+ }
+ /* --- FOOTER - 995PX--- */
+ .footer{
+     margin-left: 3rem;
+     margin-right: 3rem;
+ }
+ .footer img{
+     width: 7rem;
+     height: 4rem;
+ }
+ /* --- INTRODUCTION SECTION - 995PX--- */
+ .introduction-section{
+     margin-left: 3rem;
+     margin-right: 3rem;
+     margin-top: 6rem;
+     gap:2rem;
+ }
+ .introduction-img{
+     width: 50%;
+ }
+ .introduction-img img{
+     width: 100%;
+ }
+ .introduction-info{
+     margin-top: 1rem;
+     width: 50%;
+     margin-bottom:8rem;
+ }
+ .introduction-info h2{
+     font-size: 1.6rem;
+ }
+ .introduction-info p{
+     margin-top: 2rem;
+     margin-bottom: 4rem;
+     width: 100%;
+ }
+}
+/* ISPRAVKA ZA 835px (TABLET) */
+@media only screen and (max-width:835px){
+   /* --- NAVBAR - TABLET --- */
+.logo {
+    font-size: large;
+}
+nav {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+    gap:1rem;
+}
+.nav-menu {
+    gap: 1rem;
+}
+.nav-menu li a {
+    font-size: small;
+}
+.button-nav {
+    height: 2rem;
+    width: 5rem;
+}
+/* --- HERO SECTION - TABLET --- */
+
+.hero-section{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+}
+.hero-info{
+    margin-top: 6rem;
+    width: 40%;
+}
+.hero-info h1{
+    font-size:2rem;
+}
+.hero-info p{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.hero-buttons{
+    gap: 1rem;
+}
+.button{
+    height: 2rem;
+    width: 7rem;
+}
+.hero-img{
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    width: 60%;
+}
+.hero-img img{
+    width: 100%;
+}
+/* --- FOOTER - TABLET--- */
+.footer{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.footer img{
+    width: 7rem;
+    height: 4rem;
+}
+/* --- INTRODUCTION SECTION - TABLET--- */
+.introduction-section{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+    gap:2rem;
+}
+.introduction-img{
+    width: 50%;
+}
+.introduction-img img{
+    width: 100%;
+}
+.introduction-info{
+    margin-top: 1rem;
+    width: 50%;
+    margin-bottom:8rem;
+}
+.introduction-info h2{
+    font-size: 1.6rem;
+}
+.introduction-info p{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+}
+/* MOBILE L */
+@media only screen and (max-width: 675px){
+
+    .burger{
+        display: flex;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .button-nav{
+        display:none;
+    }
+    /* --- NAVBAR - MOBILE L --- */
+    .logo {
+        font-size: x-large;
+    }
+    nav {
+        align-items: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    /* --- HERO SECTION - MOBILE L --- */
+    .hero-section{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-info{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-info p{
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .button{
+        width: 17rem;
+    } 
+    .hero-img{
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .hero-img img{
+        width: 100%;
+    }
+    /* --- FOOTER - MOBILE L --- */
+    .footer{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .footer img{
+        width: 10rem;
+        height: 5rem;
+        object-fit: contain;
+    }
+    /* --- INTRODUCTION SECTION - MOBILE L --- */
+    .introduction-section{
+        flex-direction: column;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+        gap: 1rem;
+        align-items: center;
+    }
+    .introduction-img{
+        width: 100%;
+    }
+    .introduction-info{
+        margin-top: 7vh;
+        align-items: center;
+        width: 100%;
+    }
+    .introduction-info p{
+        width: 100%;
+        text-align: center;
+    }
+}
+/* MOBILE M */
+@media only screen and (max-width: 375px){
+
+    .burger{
+        display: flex;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .button-nav{
+        display:none;
+    }
+    /* --- NAVBAR - MOBILE M --- */
+    .logo {
+        font-size: x-large;
+    }
+    nav {
+        align-items: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    /* --- HERO SECTION - MOBILE M --- */
+    .hero-section{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-info{
+        width: 100%;
+    }
+    .hero-info p{
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    .hero-info h1{
+        text-align: center;
+    }
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .button{
+        width: 17rem;
+    } 
+    .hero-img{
+        margin-top: 12rem;
+        margin-bottom: 5rem;
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .hero-img img{
+        width: 100%;
+    }
+    /* --- FOOTER - MOBILE M --- */
+    .footer{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .footer img{
+        width: 10rem;
+        height: 5rem;
+        object-fit: contain;
+    }
+    /* --- INTRODUCTION SECTION - MOBILE M --- */
+    .introduction-section{
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        gap: 1rem;
+        align-items: center;
+    }
+    .introduction-img{
+        width: 100%;
+    }
+    .introduction-info{
+        margin-top: 7vh;
+        align-items: center;
+    }
+    .introduction-info p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
