@@ -1,0 +1,1124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F4F4F5;
+    /* padding-left: 10vh;
+    padding-right: 10vh; */
+}
+/* .wrapper{
+    margin-left: 10vh;
+    margin-right: 10vh;
+} */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#F4F4F5;
+    margin-top:15px;
+    font-size:large;
+    padding-left: 10vh;
+    padding-right: 10vh;
+
+}
+
+button div img{
+    width: 32px;
+    height: 32px;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+    
+}
+
+.logo{
+    border: none;
+    background-color:#F4F4F5;
+    font-size: large;
+    gap: 8px;
+}
+
+.contactus{
+    background-color: #F8D782;
+    border: none;
+    width: 20vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius:25px;
+}
+
+.contactus:hover{
+   background-color: #91DAEB;
+    transition: 0.3s;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+a:hover{
+    color: #91DAEB;
+    transition: 0.3s;
+}
+
+.main{
+    display:flex;
+    flex-direction: row;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.textMain{
+    width:50%;
+    padding-top:12vh;
+    
+}
+.textMain h1{
+    font-size: 5rem;
+    padding-bottom: 2vh;
+}
+.textMain h1 span{
+    color: #1FBCE0;
+}
+.textMain p{
+    font-size:larger;
+    padding-bottom: 11vh;
+}
+
+.textMain button{
+    background-color: #F8D782;
+    border: none;
+    width: 20vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius:25px;
+    
+}
+.textMain button:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+}
+
+.stats{
+    padding-top: 14vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.s h3{ 
+    font-size:3rem;
+}
+
+.break{
+    
+    width: 2px;
+    background-color: #1FBCE0;
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+
+.imgMain{
+    
+    width:50%;
+    margin-top: 10vh;
+
+    /* display: block;
+  position: relative;
+  width: 320px;
+  height: 277.12px;
+  background: red;
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  rotate: 90deg; */
+}
+
+.imgMain img{
+    /* position: absolute;
+  background-color: orange; 
+  top: 2px;
+  left: 2px;
+  width: 316px; 
+  height: 273.12px; 
+  rotate: 270deg; */
+  margin-top: 6vh;
+  object-fit:cover;
+  object-position:center;
+  height: 450px;
+  width: 400px;
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.aboutUs{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+}
+
+
+.imgAboutUs{
+    margin-top: 5vh;
+    width:50%;
+    position: relative;
+}
+
+.imgAboutUs img{
+    height:450px;
+    width:350px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;   
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    transform:translate(50%); 
+    
+}
+
+.imgAboutUs::before{
+    content: "";
+    background-color:white;
+    border:2px solid #1FBCE0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 450px;
+    width: 350px;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform:translate(50%);
+    transform:translate(60%,6%);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    position: absolute;
+    
+    
+}
+
+.textAboutUs{
+    margin-top: 5vh;
+}
+
+.textAboutUs h3{
+    color: #1FBCE0;
+    padding-bottom: 2vh;
+}
+
+.textAboutUs h2{
+    font-size:3rem;
+}
+
+.paragAboutUs{
+    padding-top: 2vh;
+}
+
+.tenYrsOfXp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5vh;
+    gap: 1vw;
+}
+.tenYrsOfXp img{
+    height:32px;
+    width:32px;
+}
+.tenYrsOfXp p{
+    font-size: larger;
+}
+.twentyTalentedVets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.twentyTalentedVets img{
+    height:32px;
+    width:32px;
+}
+
+.twentyTalentedVets p{
+    font-size: larger;
+}
+
+.buttonAboutUs{
+        background-color: #F8D782;
+        border: none;
+        width: 22vh;
+        height: 6vh;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius:25px;
+        margin-top: 6vh;
+        margin-bottom:10vh;
+    }
+.buttonAboutUs img{
+    height:32px;
+    width:32px;
+}
+
+.buttonAboutUs:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+ }
+
+ .buttonAboutUs p{
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+
+.meetGroomers{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ .meetGroomers h2{
+    margin-top: 10vh;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vh;
+ }
+
+ .headerMeetGroomers{
+    width: 100%;
+    text-align: center;
+ }
+
+ .groomers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin:auto;
+ }
+
+ .groomers div img{
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    width:270px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+ }
+
+ .groomers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+ }
+ .meetMembers{
+    background-color: #F8D782;
+    border: none;
+    width: 30vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius:25px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 8vh;
+    margin-top: 3vh;
+}
+
+.meetMembers img{
+    width: 32px;
+    height: 32px;
+}
+
+.meetMembers p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.meetMembers:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+}
+.imgAboutUs::after{
+    border: #1FBCE0;
+}
+
+.textAboutUs{
+    margin-top: 5vh;
+}
+
+.textAboutUs h3{
+    color: #1FBCE0;
+    padding-bottom: 2vh;
+}
+
+.textAboutUs h2{
+    font-size:3rem;
+}
+
+.paragAboutUs{
+    padding-top: 2vh;
+}
+
+.tenYrsOfXp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5vh;
+    gap: 1vw;
+}
+.tenYrsOfXp img{
+    height:32px;
+    width:32px;
+}
+.tenYrsOfXp p{
+    font-size: larger;
+}
+.twentyTalentedVets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.twentyTalentedVets img{
+    height:32px;
+    width:32px;
+}
+
+.twentyTalentedVets p{
+    font-size: larger;
+}
+
+.buttonAboutUs{
+        background-color: #F8D782;
+        border: none;
+        width: 22vh;
+        height: 6vh;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius:25px;
+        margin-top: 6vh;
+        margin-bottom:10vh;
+    }
+.buttonAboutUs img{
+    height:32px;
+    width:32px;
+}
+
+.buttonAboutUs:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+ }
+
+ .buttonAboutUs p{
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+
+.meetGroomers{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ .meetGroomers h2{
+    margin-top: 10vh;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vh;
+ }
+
+ .headerMeetGroomers{
+    width: 100%;
+    text-align: center;
+ }
+
+ .groomers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin:auto;
+ }
+
+ .groomers div img{
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    width:270px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    
+ }
+
+ .groomers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+ }
+ .meetMembers{
+    background-color: #F8D782;
+    border: none;
+    width: 30vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius:25px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 8vh;
+    margin-top: 3vh;
+}
+
+.meetMembers img{
+    width: 32px;
+    height: 32px;
+}
+
+.meetMembers p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.meetMembers:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+}
+
+
+
+.textAboutUs{
+    margin-top: 5vh;
+}
+
+.textAboutUs h3{
+    color: #1FBCE0;
+    padding-bottom: 2vh;
+}
+
+.textAboutUs h2{
+    font-size:3rem;
+}
+
+.paragAboutUs{
+    padding-top: 2vh;
+}
+
+.tenYrsOfXp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5vh;
+    gap: 1vw;
+}
+.tenYrsOfXp img{
+    height:32px;
+    width:32px;
+}
+.tenYrsOfXp p{
+    font-size: larger;
+}
+.twentyTalentedVets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.twentyTalentedVets img{
+    height:32px;
+    width:32px;
+}
+
+.twentyTalentedVets p{
+    font-size: larger;
+}
+
+.buttonAboutUs{
+        background-color: #F8D782;
+        border: none;
+        width: 22vh;
+        height: 6vh;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius:25px;
+        margin-top: 6vh;
+        margin-bottom:10vh;
+    }
+.buttonAboutUs img{
+    height:32px;
+    width:32px;
+}
+
+.buttonAboutUs:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+ }
+
+ .buttonAboutUs p{
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+
+.meetGroomers{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ .meetGroomers h2{
+    margin-top: 10vh;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vh;
+ }
+
+ .headerMeetGroomers{
+    width: 100%;
+    text-align: center;
+ }
+
+ .groomers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin:auto;
+ }
+
+ .groomers div img{
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    width:270px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    
+ }
+
+ .groomers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+ }
+ .meetMembers{
+    background-color: #F8D782;
+    border: none;
+    width: 30vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius:25px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 8vh;
+    margin-top: 3vh;
+}
+
+.meetMembers img{
+    width: 32px;
+    height: 32px;
+}
+
+.meetMembers p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.meetMembers:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+}
+.imgAboutUs::after{
+    border: #1FBCE0;
+}
+
+.textAboutUs{
+    margin-top: 5vh;
+}
+
+.textAboutUs h3{
+    color: #1FBCE0;
+    padding-bottom: 2vh;
+}
+
+.textAboutUs h2{
+    font-size:3rem;
+}
+
+.paragAboutUs{
+    padding-top: 2vh;
+}
+
+.tenYrsOfXp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5vh;
+    gap: 1vw;
+}
+.tenYrsOfXp img{
+    height:32px;
+    width:32px;
+}
+.tenYrsOfXp p{
+    font-size: larger;
+}
+.twentyTalentedVets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.twentyTalentedVets img{
+    height:32px;
+    width:32px;
+}
+
+.twentyTalentedVets p{
+    font-size: larger;
+}
+
+.buttonAboutUs{
+        background-color: #F8D782;
+        border: none;
+        width: 22vh;
+        height: 6vh;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius:25px;
+        margin-top: 6vh;
+        margin-bottom:10vh;
+    }
+.buttonAboutUs img{
+    height:32px;
+    width:32px;
+}
+
+.buttonAboutUs:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+ }
+
+ .buttonAboutUs p{
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+
+.meetGroomers{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ .meetGroomers h2{
+    margin-top: 10vh;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vh;
+ }
+
+ .headerMeetGroomers{
+    width: 100%;
+    text-align: center;
+ }
+
+ .groomers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin:auto;
+ }
+
+ .groomers div img{
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    width:270px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    
+ }
+
+ .groomers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+ }
+ .meetMembers{
+    background-color: #F8D782;
+    border: none;
+    width: 30vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius:25px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 8vh;
+    margin-top: 3vh;
+}
+
+.meetMembers img{
+    width: 32px;
+    height: 32px;
+}
+
+.meetMembers p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.meetMembers:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+}
+.imgAboutUs::after{
+    border: #1FBCE0;
+}
+
+.textAboutUs{
+    margin-top: 5vh;
+}
+
+.textAboutUs h3{
+    color: #1FBCE0;
+    padding-bottom: 2vh;
+}
+
+.textAboutUs h2{
+    font-size:3rem;
+}
+
+.paragAboutUs{
+    padding-top: 2vh;
+}
+
+.tenYrsOfXp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5vh;
+    gap: 1vw;
+}
+.tenYrsOfXp img{
+    height:32px;
+    width:32px;
+}
+.tenYrsOfXp p{
+    font-size: larger;
+}
+.twentyTalentedVets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.twentyTalentedVets img{
+    height:32px;
+    width:32px;
+}
+
+.twentyTalentedVets p{
+    font-size: larger;
+}
+
+.buttonAboutUs{
+        background-color: #F8D782;
+        border: none;
+        width: 22vh;
+        height: 6vh;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius:25px;
+        margin-top: 6vh;
+        margin-bottom:10vh;
+    }
+.buttonAboutUs img{
+    height:32px;
+    width:32px;
+}
+
+.buttonAboutUs:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+ }
+
+ .buttonAboutUs p{
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+
+.meetGroomers{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ .meetGroomers h2{
+    margin-top: 10vh;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vh;
+ }
+
+ .headerMeetGroomers{
+    width: 100%;
+    text-align: center;
+ }
+
+ .groomers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin:auto;
+ }
+
+ .groomers div img{
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    width:270px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    
+ }
+
+ .groomers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+ }
+ .meetMembers{
+    background-color: #F8D782;
+    border: none;
+    width: 30vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius:25px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 8vh;
+    margin-top: 3vh;
+}
+
+.meetMembers img{
+    width: 32px;
+    height: 32px;
+}
+
+.meetMembers p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.meetMembers:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+}
+.imgAboutUs::after{
+    border: #1FBCE0;
+}
+
+.textAboutUs{
+    margin-top: 5vh;
+}
+
+.textAboutUs h3{
+    color: #1FBCE0;
+    padding-bottom: 2vh;
+}
+
+.textAboutUs h2{
+    font-size:3rem;
+}
+
+.paragAboutUs{
+    padding-top: 2vh;
+}
+
+.tenYrsOfXp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5vh;
+    gap: 1vw;
+}
+.tenYrsOfXp img{
+    height:32px;
+    width:32px;
+}
+.tenYrsOfXp p{
+    font-size: larger;
+}
+.twentyTalentedVets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.twentyTalentedVets img{
+    height:32px;
+    width:32px;
+}
+
+.twentyTalentedVets p{
+    font-size: larger;
+}
+
+.buttonAboutUs{
+        background-color: #F8D782;
+        border: none;
+        width: 22vh;
+        height: 6vh;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius:25px;
+        margin-top: 6vh;
+        margin-bottom:10vh;
+    }
+.buttonAboutUs img{
+    height:32px;
+    width:32px;
+}
+
+.buttonAboutUs:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+ }
+
+ .buttonAboutUs p{
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+
+.meetGroomers{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ .meetGroomers h2{
+    margin-top: 10vh;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vh;
+ }
+
+ .headerMeetGroomers{
+    width: 100%;
+    text-align: center;
+ }
+
+ .groomers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin:auto;
+ }
+
+ .groomers div img{
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    width:270px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    
+ }
+
+ .groomers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+ }
+ .meetMembers{
+    background-color: #F8D782;
+    border: none;
+    width: 30vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius:25px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 8vh;
+    margin-top: 3vh;
+}
+
+.meetMembers img{
+    width: 32px;
+    height: 32px;
+}
+
+.meetMembers p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.meetMembers:hover{
+    background-color: #91DAEB;
+    transition: 0.3s;
+}
+ 
